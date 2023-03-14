@@ -21,21 +21,20 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const withdrawAmount = withdrawField.value;
     const withdrawArea = document.getElementById('withdraw');
     const previousWithdrawAmount = withdrawArea.innerText;
-    const totalWithdraw = parseInt(withdrawAmount) + parseInt(previousWithdrawAmount);
-    withdrawArea.innerText = totalWithdraw;
 
     // decrement from net balance 
     const netBalance = document.getElementById('net-balance');
     const previousNetBalance = netBalance.innerText;
     // const totalNetBalance = parseInt(previousNetBalance) - parseInt(withdrawAmount);
     if (parseInt(previousNetBalance) >= parseInt(withdrawAmount)) {
+        const totalWithdraw = parseInt(withdrawAmount) + parseInt(previousWithdrawAmount);
+        withdrawArea.innerText = totalWithdraw;
         const totalNetBalance = parseInt(previousNetBalance) - parseInt(withdrawAmount);
         netBalance.innerText = totalNetBalance;
     }
     else {
         alert('Insufficient Balance');
     }
-
 
     withdrawField.value = '';
 
