@@ -15,9 +15,9 @@
                 Bank Account</span>!!!</h1>
     </header>
 
-    <main>
+    <main class="bg-purple-200 py-14">
         <section class="w-9/12 mx-auto">
-            <div class="font-medium grid grid-cols-3 gap-4 my-5">
+            <div class="font-medium grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
                 <div class="text-3xl bg-green-300 p-4 text-center rounded">
                     <h3 class="mb-2">Deposit</h3>
                     <h3>$ <span>000</span></h3>
@@ -29,6 +29,24 @@
                 <div class="text-3xl bg-pink-300 p-4 text-center rounded">
                     <h3 class="mb-2">Net Balance</h3>
                     <h3>$ <span>2100</span></h3>
+                </div>
+            </div>
+
+            <!-- input field  -->
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="text-center bg-lime-400 p-6 rounded">
+                    <h3 class="text-2xl font-medium">Please Input Your Deposit Amount</h3>
+                    <input class="block w-3/4 mx-auto px-2 py-1 my-2 rounded" type="number" name="" id=""
+                        placeholder="$amount you want to deposit">
+                    <button
+                        class="bg-red-500 hover:bg-green-700 text-white font-medium px-3 py-1 mt-2 rounded">Deposit</button>
+                </div>
+                <div class="text-center bg-emerald-400 p-6 rounded">
+                    <h3 class="text-2xl font-medium">Please Input Your Withdraw Amount</h3>
+                    <input class="block w-3/4 mx-auto px-2 py-1 my-2 rounded" type="number" name="" id=""
+                        placeholder="$amount you want to deposit">
+                    <button
+                        class="bg-red-500 hover:bg-green-700 text-white font-medium px-3 py-1 mt-2 rounded">Withdraw</button>
                 </div>
             </div>
         </section>
