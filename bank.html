@@ -20,15 +20,15 @@
             <div class="font-medium grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
                 <div class="text-3xl bg-green-300 p-4 text-center rounded">
                     <h3 class="mb-2">Deposit</h3>
-                    <h3>$ <span>000</span></h3>
+                    <h3>$ <span id="deposit">000</span></h3>
                 </div>
                 <div class="text-3xl bg-yellow-300 p-4 text-center rounded">
                     <h3 class="mb-2">Withdraw</h3>
-                    <h3>$ <span>000</span></h3>
+                    <h3>$ <span id="withdraw">000</span></h3>
                 </div>
                 <div class="text-3xl bg-pink-300 p-4 text-center rounded">
                     <h3 class="mb-2">Net Balance</h3>
-                    <h3>$ <span>2100</span></h3>
+                    <h3>$ <span id="net-balance">2100</span></h3>
                 </div>
             </div>
 
@@ -36,21 +36,24 @@
             <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="text-center bg-lime-400 p-6 rounded">
                     <h3 class="text-2xl font-medium">Please Input Your Deposit Amount</h3>
-                    <input class="block w-3/4 mx-auto px-2 py-1 my-2 rounded" type="number" name="" id=""
+                    <input class="block w-3/4 mx-auto px-2 py-1 my-2 rounded" type="number" name="" id="deposit-field"
                         placeholder="$amount you want to deposit">
-                    <button
-                        class="bg-red-500 hover:bg-green-700 text-white font-medium px-3 py-1 mt-2 rounded">Deposit</button>
+                    <button class="bg-red-500 hover:bg-green-700 text-white font-medium px-3 py-1 mt-2 rounded"
+                        id="deposit-btn">Deposit</button>
                 </div>
                 <div class="text-center bg-emerald-400 p-6 rounded">
                     <h3 class="text-2xl font-medium">Please Input Your Withdraw Amount</h3>
-                    <input class="block w-3/4 mx-auto px-2 py-1 my-2 rounded" type="number" name="" id=""
+                    <input class="block w-3/4 mx-auto px-2 py-1 my-2 rounded" type="number" name="" id="withdraw-field"
                         placeholder="$amount you want to deposit">
-                    <button
-                        class="bg-red-500 hover:bg-green-700 text-white font-medium px-3 py-1 mt-2 rounded">Withdraw</button>
+                    <button class="bg-red-500 hover:bg-green-700 text-white font-medium px-3 py-1 mt-2 rounded"
+                        id="withdraw-btn">Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
+
+
+    <script src="js/bank.js"></script>
 </body>
 
 </html>
